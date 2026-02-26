@@ -1,0 +1,236 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Datos Personales del Paciente</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            width: 700px;
+            margin: 20px auto;
+            background-color: #ebebeb;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            margin-bottom: 10px;
+            align-items: center;
+        }
+
+        label {
+            font-size: 14px;
+        }
+
+        input, select, textarea {
+            padding: 5px;
+            width: 100%;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 60px;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        button {
+            padding: 6px 15px;
+            margin: 0 5px;
+            border: none;
+            background-color: #3b7ddd;
+            color: white;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        button:hover {
+            background-color: #2f66c2;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Datos Personales Del Paciente</h2>
+
+    <form>
+        <div class="form-group">
+            <label>DNI</label>
+            <input type="text" name="dni">
+        </div>
+
+        <div class="form-group">
+            <label>Foto</label>
+            <input type="file" name="foto">
+        </div>
+
+        <div class="form-group">
+            <label>Nombres</label>
+            <input type="text" name="nombres">
+        </div>
+
+        <div class="form-group">
+            <label>Apellidos</label>
+            <input type="text" name="apellidos">
+        </div>
+
+        <div class="form-group">
+            <label>Fecha de Nacimiento</label>
+            <input type="date" name="fecha">
+        </div>
+
+        <div class="form-group">
+            <label>Sexo</label>
+            <select name="sexo">
+                <option value="">Seleccione</option>
+                <option>Masculino</option>
+                <option>Femenino</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Nombre del Representante</label>
+            <input type="text" name="representante">
+        </div>
+
+        <div class="form-group">
+            <label>Teléfonos</label>
+            <input type="text" name="telefono">
+        </div>
+
+        <div class="form-group">
+            <label>Sala</label>
+            <select name="sala">
+                <option value="">Seleccione</option>
+                <option>Sala 1</option>
+                <option>Sala 2</option>
+                <option>Sala 3</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Dirección</label>
+            <textarea name="direccion"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>País</label>
+            <select name="pais">
+                <option value="">Seleccione</option>
+                <option>Paraguay</option>
+                <option>México</option>
+                <option>Colombia</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Departamento</label>
+            <input type="text" name="departamento">
+        </div>
+
+        <div class="form-group">
+            <label>Provincia</label>
+            <input type="text" name="provincia">
+        </div>
+
+        <div class="form-group">
+            <label>Distrito</label>
+            <input type="text" name="distrito">
+        </div>
+
+        <div class="form-group">
+            <label>Estado Civil</label>
+            <select name="estado_civil">
+                <option value="">Seleccione</option>
+                <option>Soltero(a)</option>
+                <option>Casado(a)</option>
+                <option>Divorciado(a)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Emergencia</label>
+            <textarea name="emergencia"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Grupo Sanguíneo</label>
+            <select name="grupo">
+                <option value="">Seleccione</option>
+                <option>A+</option>
+                <option>A-</option>
+                <option>B+</option>
+                <option>B-</option>
+                <option>AB+</option>
+                <option>AB-</option>
+                <option>O+</option>
+                <option>O-</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>VIH</label>
+            <select name="vih">
+                <option value="">Seleccione</option>
+                <option>Positivo</option>
+                <option>Negativo</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Ocupación</label>
+            <input type="text" name="ocupación">
+        </div>
+
+        <div class="form-group">
+            <label>Peso</label>
+            <input type="number" name="peso" step="0.1">
+        </div>
+
+        <div class="form-group">
+            <label>Talla</label>
+            <input type="number" name="talla" step="0.01">
+        </div>
+
+        <div class="form-group">
+            <label>Alérgico</label>
+            <textarea name="alergico"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Medicamento Que Toma Actualmente</label>
+            <textarea name="medicamento"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Enfermedad Que Tiene</label>
+            <textarea name="enfermedad"></textarea>
+        </div>
+
+        <div class="buttons">
+            <button type="submit">Registrar</button>
+            <button type="reset">Limpiar</button>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
+```
